@@ -6,7 +6,7 @@
 # ================================================================================================================
 
 # Base is a nginx install with php
-FROM amontaigu/nginx-php
+FROM amontaigu/nginx-php:5.6.13
 
 # Maintainer
 MAINTAINER alban.montaigu@gmail.com
