@@ -15,7 +15,7 @@ MAINTAINER alban.montaigu@gmail.com
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends libpng12-dev libjpeg-dev libfreetype6-dev libjpeg62-turbo-dev libgd2-xpm-dev libmagickwand-dev imagemagick libmcrypt-dev \
-    && docker-php-ext-install iconv mcrypt mbstring mysqli pdo_mysql zip gettext \
+    && docker-php-ext-install iconv mcrypt mbstring mysqli pdo_mysql zip gettext exif \
     && pecl install imagick-beta \
     && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/ext-imagick.ini \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
