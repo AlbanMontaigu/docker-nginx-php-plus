@@ -4,6 +4,16 @@
 
 This image is an addition to my [nginx-php](https://hub.docker.com/r/amontaigu/nginx-php/) image.
 
+**Php modules added :**
+* iconv
+* mcrypt
+* mbstring
+* mysqli
+* pdo_mysql
+* zip
+* gettext
+* exif
+
 ## References and documentation
 
 You can check directly my [original nginx-php image source](https://github.com/AlbanMontaigu/docker-nginx-php) for this.
