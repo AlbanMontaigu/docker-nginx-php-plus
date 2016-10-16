@@ -20,7 +20,7 @@ RUN apt-get update \
     && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/ext-imagick.ini \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
 # Install composer since more php apps require it
     && curl -s http://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
