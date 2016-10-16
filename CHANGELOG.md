@@ -2,6 +2,7 @@
 ## 5.6.27 (2016-10-15)
 - Update to amontaigu/nginx-php 5.6.27
 - Removed iconv install since already in php modules
+- Install composer since more php apps require it
 
 ## 5.6.26 (2016-10-15)
 - Update to amontaigu/nginx-php 5.6.26
