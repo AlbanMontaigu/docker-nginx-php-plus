@@ -24,4 +24,5 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
 # Install composer since more php apps require it
     && curl -s http://getcomposer.org/installer | php \
-    && mv composer.phar /usr/local/bin/composer
+    && mv composer.phar /usr/local/bin/composer \
+    && chmod +x /usr/local/bin/composer
