@@ -1,4 +1,7 @@
 
+## 5.6.29 (2017-01-02)
+- Update to amontaigu/nginx-php 5.6.29
+
 ## 5.6.27 (2016-10-15)
 - Update to amontaigu/nginx-php 5.6.27
 - Removed iconv install since already in php modules
