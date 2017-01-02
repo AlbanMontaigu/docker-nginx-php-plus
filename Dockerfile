@@ -13,7 +13,6 @@ MAINTAINER alban.montaigu@gmail.com
 
 # System update & install the PHP extensions we need
 RUN apt-get update \
-    && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends libpng12-dev libjpeg-dev libfreetype6-dev libjpeg62-turbo-dev libgd2-xpm-dev libmagickwand-dev imagemagick libmcrypt-dev \
     && docker-php-ext-install mcrypt mbstring mysqli pdo_mysql zip gettext exif \
     && pecl install imagick-beta \
